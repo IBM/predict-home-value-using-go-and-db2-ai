@@ -1,0 +1,52 @@
+# The container name used for the run container
+container-name-run : "db2wml-go-run"
+# The container name used for the tools container
+container-name-tools : "db2wml-go-tools"
+
+# The project root on the host for the run container to mount to container-path-run
+host-path-run : "."
+# The project root on the host for the tools container to mount to container-path-tools
+host-path-tools : "."
+
+# The project root in the run container to mount to host-path-run
+container-path-run : "/go/src/db2wml; :"
+# The project root in the tools container that will be mounted to host-path-tools
+container-path-tools : "/go/src/db2wml; :"
+
+# The port mappings between the host and the container in the form [host:container]
+container-port-map : "8080:8080"
+# The port mappings between the host and the container for the debug port in the form [host:container]
+container-port-map-debug : "8181:8181"
+
+# The name for the dockerfile for the run container
+dockerfile-run : "Dockerfile"
+# The name for the dockerfile for the tools container
+dockerfile-tools : "Dockerfile-tools"
+
+# The name of image to create from dockerfile-run
+image-name-run : "db2wml-go-run"
+# The name of image to create from dockerfile-tools
+image-name-tools : "db2wml-go-tools"
+
+# The command to build the code and docker image for RUN
+build-cmd-run : "go build"
+# The command to execute tests for the code in the tools container
+test-cmd : "go test ./..."
+# The command to build the code and docker image for DEBUG
+build-cmd-debug : "go build"
+
+# The command to run the code in the run container
+run-cmd : ""
+# The command to execute debug of the code in the tools container
+debug-cmd : "dlv debug --headless --listen=0.0.0.0:8181"
+# The command to stop the code
+stop-cmd : ""
+
+# The relative path to the helm chart used for Kubernetes deployment
+chart-path : "chart/db2wml"
+
+# The IBM version of this configuration
+version : "0.0.3"
+ibm-generated-id : "f182341d-a632-4631-9fec-143cbc7db968"
+ibm-cloud-app-id : "f57c60bd-8a35-4f5c-9a21-33cbb1e281e9"
+credentials-filepath : "localdev-config.json, server/localdev-config.json"

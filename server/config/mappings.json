@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "dashdb_db": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:db",
+      "cloudfoundry:$['dashDB'][0].credentials.db",
+      "env:service_dashdb:$.db",
+      "env:dashdb_db",
+      "file:/server/localdev-config.json:$.dashdb_db"
+    ]
+  },
+  "dashdb": {
+    "credentials": {
+      "searchPatterns": [
+        "user-provided:Db2 Warehouse-3u:username",
+        "cloudfoundry:dashdb",
+        "env:dashdb_credentials",
+        "file:/server/localdev-config.json:dashdb_credentials"
+      ]
+    }
+  },
+  "dashdb_dsn": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:dsn",
+      "cloudfoundry:$['dashDB'][0].credentials.dsn",
+      "env:service_dashdb:$.dsn",
+      "env:dashdb_dsn",
+      "file:/server/localdev-config.json:$.dashdb_dsn"
+    ]
+  },
+  "dashdb_host": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:host",
+      "cloudfoundry:$['dashDB'][0].credentials.host",
+      "env:service_dashdb:$.host",
+      "env:dashdb_host",
+      "file:/server/localdev-config.json:$.dashdb_host"
+    ]
+  },
+  "dashdb_hostname": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:hostname",
+      "cloudfoundry:$['dashDB'][0].credentials.hostname",
+      "env:service_dashdb:$.hostname",
+      "env:dashdb_hostname",
+      "file:/server/localdev-config.json:$.dashdb_hostname"
+    ]
+  },
+  "dashdb_https_url": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:https_url",
+      "cloudfoundry:$['dashDB'][0].credentials.https_url",
+      "env:service_dashdb:$.https_url",
+      "env:dashdb_https_url",
+      "file:/server/localdev-config.json:$.dashdb_https_url"
+    ]
+  },
+  "dashdb_jdbcurl": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:jdbcurl",
+      "cloudfoundry:$['dashDB'][0].credentials.jdbcurl",
+      "env:service_dashdb:$.jdbcurl",
+      "env:dashdb_jdbcurl",
+      "file:/server/localdev-config.json:$.dashdb_jdbcurl"
+    ]
+  },
+  "dashdb_password": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:password",
+      "cloudfoundry:$['dashDB'][0].credentials.password",
+      "env:service_dashdb:$.password",
+      "env:dashdb_password",
+      "file:/server/localdev-config.json:$.dashdb_password"
+    ]
+  },
+  "dashdb_port": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:port",
+      "cloudfoundry:$['dashDB'][0].credentials.port",
+      "env:service_dashdb:$.port",
+      "env:dashdb_port",
+      "file:/server/localdev-config.json:$.dashdb_port"
+    ]
+  },
+  "dashdb_ssldsn": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:ssldsn",
+      "cloudfoundry:$['dashDB'][0].credentials.ssldsn",
+      "env:service_dashdb:$.ssldsn",
+      "env:dashdb_ssldsn",
+      "file:/server/localdev-config.json:$.dashdb_ssldsn"
+    ]
+  },
+  "dashdb_ssljdbcurl": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:ssljdbcurl",
+      "cloudfoundry:$['dashDB'][0].credentials.ssljdbcurl",
+      "env:service_dashdb:$.ssljdbcurl",
+      "env:dashdb_ssljdbcurl",
+      "file:/server/localdev-config.json:$.dashdb_ssljdbcurl"
+    ]
+  },
+  "dashdb_uri": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:uri",
+      "cloudfoundry:$['dashDB'][0].credentials.uri",
+      "env:service_dashdb:$.uri",
+      "env:dashdb_uri",
+      "file:/server/localdev-config.json:$.dashdb_uri"
+    ]
+  },
+  "dashdb_username": {
+    "searchPatterns": [
+      "user-provided:Db2 Warehouse-3u:username",
+      "cloudfoundry:$['dashDB'][0].credentials.username",
+      "env:service_dashdb:$.username",
+      "env:dashdb_username",
+      "file:/server/localdev-config.json:$.dashdb_username"
+    ]
+  }
+}
