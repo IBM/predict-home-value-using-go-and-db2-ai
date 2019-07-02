@@ -1,0 +1,13 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: db2ai
+  buildpack: go_buildpack
+  memory: 256M
+  domain: db2ai
+  host: db2ai
+  services:
+    - Db2 Warehouse-3u
+  env:
+    GOPACKAGENAME : db2ai
