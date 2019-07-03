@@ -41,7 +41,7 @@ In the Db2 warehouse resource page, click on `Manage` and go to DB2 console by c
 * Make sure the column names and data types displayed are correct, then cick `Next`
 * Click `Begin Load` to load the data
 
-Once the data is loaded you can split the data into two table, one that is used for creating the model and the other to test the model. The data in test table will be used to predict one of its columns. In order to split the data, we can use one of the built-in stored procedure. Before you run the split stored procedure, lets enrich the original data by creating a view out of the original table. This makes the query to create model and prediciton run faster.
+Once the data is loaded you can split the data into two tables, one that is used for creating the model and the other to test the model. The data in test table will be used to predict one of its columns. In order to split the data, we can use one of the built-in stored procedures. Before you run the split stored procedure, lets enrich the original data by creating a view out of the original table. This makes the query to create model and prediction run faster.
 
 In the IBM Db2 console, click `Run SQL` from the hamburger menu and run the following sql statement to create the view.
 
