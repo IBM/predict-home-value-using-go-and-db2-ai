@@ -11,7 +11,7 @@ TBD
 ## Steps
 
 1. [Clone the repo](#1-clone-the-repo)
-1. [Create IBM Db2 Warehouse on Cloud](#2-create-db2-warehouse-on-cloud)
+1. [Create IBM Db2 Warehouse on Cloud](#2-create-ibm-db2-warehouse-on-cloud)
 1. [Load and split the data](#3-load-and-split-the-data)
 1. [Create the model](#4-create-the-model)
 1. [Predict using linear regression](#5-predict-using-linear-regression)
