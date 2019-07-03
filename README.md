@@ -119,7 +119,7 @@ FROM DB2WML.HOME_SALES_PREDICT AS IN, DB2WML.HOME_SALES_RESULT AS OUT
 WHERE IN.ID=OUT.ID;
 ```
 
-### 6 . Add Db2 credentials to .env file
+### 6. Add Db2 credentials to .env file
 
 Copy the local `env.sample` file and rename it `.env`:
 
@@ -141,7 +141,7 @@ Update the `.env` file with the credentials from your Assistant service.
     DB2_DBNAME=<add dbname>
 ```
 
-### 7 . Install DB2 Driver in your system
+### 7. Install DB2 Driver in your system
 
 To install go Db2 driver into your application, follow the following steps.
 
@@ -157,7 +157,7 @@ To install go Db2 driver into your application, follow the following steps.
 
 > Note: make sure you change the `<uname>` to username of your system.
 
-### 8 . Run the application
+### 8. Run the application
 
 ```bash
     go run server.go
