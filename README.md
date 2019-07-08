@@ -43,7 +43,7 @@ Create the Db2 Warehouse on Cloud service and make sure to note the credentials 
 In the Db2 warehouse resource page, click on `Manage` and go to DB2 console by clicking the button `Open Console`. In the console do the following to load your data.
 
 * Click `Load` from the hamburger menu.
-* Click `Browse files` or you can drag files, select the [data/train.csv](data/train.csv) and click `Next`
+* Click `Browse files` or you can drag files, select the [data/home-sales-training-data.csv](data/home-sales-training-data.csv) and click `Next`
 * Choose existing schema or create a new one by clicking `+ New Schema`
 * Create a new table by clicking `+ New Table` on the schema you created and click `Next`
 * Make sure the column names and data types displayed are correct, then cick `Next`
