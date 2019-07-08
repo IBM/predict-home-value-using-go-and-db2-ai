@@ -8,8 +8,8 @@ IBM Db2 Warehouse on cloud has built-in stored procedures that helps you analyze
 
 ![Architecture Diagram](doc/source/images/architecture.png)
 
-1. Load train data to IBM Db2 Warehouse.
-2. IBM Db2 Warehouse stores training and test data.
+1. Load training data to IBM Db2 Warehouse.
+2. IBM Db2 Warehouse stores training and test data in a table.
 3. Train the model by running the built-in stored procedure in IBM Db2 warehouse.
 4. An application written in golang to predict home sale price.
 5. The prediction logic is exposed through an API.
