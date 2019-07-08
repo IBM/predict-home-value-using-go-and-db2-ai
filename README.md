@@ -6,7 +6,14 @@ IBM Db2 Warehouse on cloud has built-in stored procedures that helps you analyze
 
 ## Flow
 
-TBD
+![Architecture Diagram](doc/source/images/architecture.png)
+
+1. Load train data to IBM Db2 Warehouse.
+2. IBM Db2 Warehouse stores training and test data.
+3. Train the model by running the built-in stored procedure in IBM Db2 warehouse.
+4. An application written in golang to predict home sale price.
+5. The prediction logic is exposed through an API.
+6. Frontend application calls the API to get the prediction results.
 
 ## Steps
 
@@ -36,7 +43,7 @@ Create the Db2 Warehouse on Cloud service and make sure to note the credentials 
 In the Db2 warehouse resource page, click on `Manage` and go to DB2 console by clicking the button `Open Console`. In the console do the following to load your data.
 
 * Click `Load` from the hamburger menu.
-* Click `Browse files` or you can drag files and click `Next`
+* Click `Browse files` or you can drag files, select the [data/train.csv](data/train.csv) and click `Next`
 * Choose existing schema or create a new one by clicking `+ New Schema`
 * Create a new table by clicking `+ New Table` on the schema you created and click `Next`
 * Make sure the column names and data types displayed are correct, then cick `Next`
@@ -70,7 +77,7 @@ The training and test data will be stored in the HOME_SALES_TRAIN and HOME_SALES
 
 You can find details about the split stored procedure [here](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/r_data_transform_split_data_procedure.html)
 
-![Load and Split data](doc/source/images/load_split_data.gif)
+![Load and Split data](doc/source/gif/load-split-data.gif)
 
 ### 4. Create the model
 
