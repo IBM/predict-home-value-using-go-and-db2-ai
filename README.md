@@ -140,7 +140,6 @@ Update the `.env` file with the credentials from your Assistant service.
     # Copy this file to .env and replace the credentials with
     # your own before starting the app.
 
-    # Watson Discovery
     DB2_HOST=<add host name>
     DB2_USER=<add user>
     DB2_PASS=<add password>
