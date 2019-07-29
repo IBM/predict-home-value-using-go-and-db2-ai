@@ -1,8 +1,8 @@
 # Predict Home Value Using GO language and DB2 AI
 
-This is an AI appplication written in `golang` which uses IBM Db2 Warehouse on cloud built-in stored procedures to train and run models on data residing in IBM Db2 Warehouse on Cloud. This specific application runs the built-in linear regression stored procedure to predict the home sales price based on provided property details.
+This is an AI application written in `golang` which uses IBM Db2 Warehouse on cloud built-in stored procedures to train and run models on data residing in IBM Db2 Warehouse on Cloud. This specific application runs the built-in linear regression stored procedure to predict the home sales price based on provided property details.
 
-IBM Db2 Warehouse on cloud has built-in stored procedures that helps you analyze data. Operations and computations are performed by the IBM Db2 Warehouse engine itself without having to move the data. This way you can achieve greater performance in terms of computations and retrieval of the  results. You can read more about the different algortithm that IBM Db2 Warehouse on cloud supports in the form of stored procedures [here](https://docs-iias.mybluemix.net/docs/content/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/r_analytic_stored_procedures.html).
+IBM Db2 Warehouse on cloud has built-in stored procedures that helps you analyze data. Operations and computations are performed by the IBM Db2 Warehouse engine itself without having to move the data. This way you can achieve greater performance in terms of computations and retrieval of the  results. You can read more about the different algorithm that IBM Db2 Warehouse on cloud supports in the form of stored procedures [here](https://docs-iias.mybluemix.net/docs/content/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/r_analytic_stored_procedures.html).
 
 ## Flow
 
