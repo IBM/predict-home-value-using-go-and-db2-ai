@@ -25,6 +25,7 @@ IBM Db2 Warehouse on cloud has built-in stored procedures that helps you analyze
 1. [Add Db2 credentials to .env file](#6-add-db2-credentials-to-env-file)
 1. [Install DB2 Driver in your system](#7-install-db2-driver-in-your-system)
 1. [Run the application](#8-run-the-application)
+1. [Test the API using UI](#9-test-the-api-using-ui)
 
 ### 1. Clone the repo
 
@@ -170,6 +171,25 @@ To install go Db2 driver into your application, follow the following steps.
 ```
 
 To test the API you can run: `curl http://localhost:8080`
+
+### 9. Test the API using UI
+
+* Run the code from the github URL:
+
+`https://github.com/IBM/crud-using-nodejs-and-db2`
+
+* Replace the value of `IBM_WML_API: 'https://<url>',` in `src/enviornments/enviornment.ts` with the API deployment url from Watson Machine Learning.
+
+* Click `Predict` from the navigation bar on top right.
+
+* Fill out the details, Choose `Predict using Watson Machine Learning` in Predict Options and click `Submit`.
+
+* Analyze the prediction result.
+
+![Testing](doc/source/images/test-1.png)
+
+![Testing](doc/source/images/test-1b.png)
+
 
 ## Learn more
 
