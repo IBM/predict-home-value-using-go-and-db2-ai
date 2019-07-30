@@ -178,7 +178,7 @@ To test the API you can run: `curl http://localhost:8080`
 
 `https://github.com/IBM/crud-using-nodejs-and-db2`
 
-* Replace the value of `IBM_WML_API: 'https://<url>',` in `src/enviornments/enviornment.ts` with the API deployment url from Watson Machine Learning.
+* Replace the value of `GO_DB2_API: 'https://<url>',` in `src/enviornments/enviornment.ts` with the API URL of your go server whcih would be `http://localhost:8080/predict`
 
 * Click `Predict` from the navigation bar on top right.
 
