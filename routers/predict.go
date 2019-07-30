@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// PredictGET API to get prediction result
+// PredictPOST API to get prediction result
 func PredictPOST(c *gin.Context) {
 	decoder := json.NewDecoder(c.Request.Body)
 	var t *models.HomeDetail
